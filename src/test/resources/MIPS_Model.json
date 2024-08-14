@@ -1,0 +1,1499 @@
+{
+  "parts": {
+    "shift": {
+      "pos": {
+        "x": 36.0,
+        "y": 13.0
+      },
+      "shift": -2,
+      "flags": [],
+      "type": "Shift"
+    },
+    "bneAnd": {
+      "pos": {
+        "x": 51.0,
+        "y": 10.0
+      },
+      "flags": [
+        "runMoreThanOnce"
+      ],
+      "type": "And"
+    },
+    "adder": {
+      "pos": {
+        "x": 40.0,
+        "y": 14.0
+      },
+      "inWidths": [
+        32,
+        32
+      ],
+      "flags": [
+        "runMoreThanOnce",
+        "priority"
+      ],
+      "type": "Add"
+    },
+    "muxDataMem": {
+      "controlSignalTop": true,
+      "pos": {
+        "x": 46.0,
+        "y": -2.0
+      },
+      "increasing": true,
+      "flags": [
+        "runMoreThanOnce"
+      ],
+      "type": "Multiplexer"
+    },
+    "dataMem": {
+      "pos": {
+        "x": 41.0,
+        "y": -3.0
+      },
+      "flags": ["lowPriority"],
+      "type": "DataMemory"
+    },
+    "mux3": {
+      "controlSignalTop": false,
+      "pos": {
+        "x": 46.0,
+        "y": 15.0
+      },
+      "increasing": false,
+      "flags": [
+        "runMoreThanOnce",
+        "lowPriority"
+      ],
+      "type": "Multiplexer"
+    },
+    "mux2": {
+      "controlSignalTop": true,
+      "pos": {
+        "x": 34.0,
+        "y": -2.0
+      },
+      "increasing": false,
+      "flags": [
+        "runMoreThanOnce"
+      ],
+      "type": "Multiplexer"
+    },
+    "mux1": {
+      "controlSignalTop": true,
+      "pos": {
+        "x": 25.0,
+        "y": -2.0
+      },
+      "increasing": false,
+      "flags": [
+        "runMoreThanOnce"
+      ],
+      "type": "Multiplexer"
+    },
+    "se": {
+      "pos": {
+        "x": 28.0,
+        "y": -5.0
+      },
+      "flags": [],
+      "type": "SignExtend"
+    },
+    "not": {
+      "pos": {
+        "x": 48.0,
+        "y": 11.0
+      },
+      "flags": [],
+      "type": "Not"
+    },
+    "and": {
+      "pos": {
+        "x": 41.0,
+        "y": 11.0
+      },
+      "flags": [
+        "runMoreThanOnce",
+        "runMoreThanOnce",
+        "priority"
+      ],
+      "type": "And"
+    },
+    "bitmask2": {
+      "pos": {
+        "x": 20.0,
+        "y": 3.0
+      },
+      "flags": [],
+      "start": 21,
+      "end": 25,
+      "type": "BitMask",
+      "inWidth": 32
+    },
+    "registers": {
+      "pos": {
+        "x": 27.0,
+        "y": -2.0
+      },
+      "flags": [
+        "runMoreThanOnce"
+      ],
+      "type": "Registers"
+    },
+    "bitmask1": {
+      "pos": {
+        "x": 20.0,
+        "y": 9.0
+      },
+      "flags": [
+        "priority"
+      ],
+      "start": 26,
+      "end": 31,
+      "type": "BitMask",
+      "inWidth": 32
+    },
+    "bitmask4": {
+      "pos": {
+        "x": 20.0,
+        "y": -1.0
+      },
+      "flags": [],
+      "start": 11,
+      "end": 15,
+      "type": "BitMask",
+      "inWidth": 32
+    },
+    "bitmask3": {
+      "pos": {
+        "x": 20.0,
+        "y": 1.0
+      },
+      "flags": [],
+      "start": 16,
+      "end": 20,
+      "type": "BitMask",
+      "inWidth": 32
+    },
+    "bitmask5": {
+      "pos": {
+        "x": 20.0,
+        "y": -4.5
+      },
+      "flags": [],
+      "start": 0,
+      "end": 15,
+      "type": "BitMask",
+      "inWidth": 32
+    },
+    "add4": {
+      "addNum": 4,
+      "pos": {
+        "x": 12.0,
+        "y": 15.0
+      },
+      "flags": [],
+      "type": "AddConstant",
+      "inWidth": 32
+    },
+    "aluControl": {
+      "pos": {
+        "x": 34.0,
+        "y": -8.0
+      },
+      "flags": [],
+      "type": "ALUControl"
+    },
+    "or": {
+      "pos": {
+        "x": 55.0,
+        "y": 12.0
+      },
+      "flags": [
+        "runMoreThanOnce"
+      ],
+      "type": "Or"
+    },
+    "control": {
+      "pos": {
+        "x": 24.0,
+        "y": 7.0
+      },
+      "flags": [
+        "priority"
+      ],
+      "type": "ControlUnit"
+    },
+    "alu": {
+      "pos": {
+        "x": 36.0,
+        "y": -1.0
+      },
+      "flags": [
+        "lowPriority"
+      ],
+      "type": "ALU"
+    },
+    "maskalu": {
+      "pos": {
+        "x": 28.0,
+        "y": -7.5
+      },
+      "flags": [],
+      "start": 0,
+      "end": 5,
+      "type": "BitMask",
+      "inWidth": 16
+    },
+    "pc": {
+      "pos": {
+        "x": 4.0,
+        "y": -1.0
+      },
+      "flags": [],
+      "type": "ProgramCounter"
+    },
+    "instructionMem": {
+      "pos": {
+        "x": 12.0,
+        "y": -2.0
+      },
+      "flags": [],
+      "type": "InstructionMemory"
+    },
+    "shiftJump": {
+      "pos": {
+        "x": 23.0,
+        "y": 20.0
+      },
+      "shift": -2,
+      "flags": [],
+      "type": "Shift"
+    },
+    "bitmaskJump": {
+      "pos": {
+        "x": 19.0,
+        "y": 20.5
+      },
+      "flags": [
+        "priority"
+      ],
+      "start": 0,
+      "end": 25,
+      "type": "BitMask",
+      "inWidth": 32
+    },
+    "bitmaskJumpPC": {
+      "pos": {
+        "x": 28.0,
+        "y": 19.5
+      },
+      "start": 28,
+      "end": 31,
+      "flags": [],
+      "type": "BitMask",
+      "inWidth": 32
+    },
+    "jumpAdd": {
+      "pos": {
+        "x": 33.0,
+        "y": 19.5
+      },
+      "type": "Add",
+      "flags": ["runMoreThanOnce"],
+      "inWidths": [
+        32,
+        32
+      ]
+    },
+    "muxJump": {
+      "pos": {
+        "x": 49.0,
+        "y": 18
+      },
+      "type": "Multiplexer",
+      "flags": ["runMoreThanOnce"],
+      "increasing": true,
+      "controlSignalTop": true
+    }
+
+  },
+  "start": "pc",
+  "wires": [
+    {
+      "bits": 32,
+      "start": {
+        "part": "muxJump",
+        "id": 0
+      },
+      "end": {
+        "part": "pc",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        { "x": 51.0, "y": 19.5}, {"x": 51.0, "y": 23.0}, {"x": 3.0, "y": 23.0}, {"x": 3.0, "y": 0.5}
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "jumpAdd",
+        "id": 0
+      },
+      "end": {
+        "part": "muxJump",
+        "id": 1
+      },
+      "isControl": false
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 8
+      },
+      "end": {
+        "part": "muxJump",
+        "id": 2
+      },
+      "isControl": true
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "shiftJump",
+        "id": 0
+      },
+      "end": {
+        "part": "jumpAdd",
+        "id": 1
+      },
+      "isControl": false
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "bitmaskJumpPC",
+        "id": 0
+      },
+      "end": {
+        "part": "jumpAdd",
+        "id": 0
+      },
+      "isControl": false
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "add4",
+        "id": 0
+      },
+      "end": {
+        "part": "bitmaskJumpPC",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 27.0,
+          "y": 16.0
+        },
+        {
+          "x": 27.0,
+          "y": 20.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "bitmaskJump",
+        "id": 0
+      },
+      "end": {
+        "part": "shiftJump",
+        "id": 0
+      },
+      "flags": [],
+      "isControl": false
+    },
+    {
+      "bits": 32,
+      "end": {
+        "part": "bitmaskJump",
+        "id": 0
+      },
+      "isControl": false,
+      "start": {
+        "part": "instructionMem",
+        "id": 0
+      },
+      "waypoints": [
+        {
+          "x": 18.0,
+          "y": 0.5
+        },
+        {
+          "x": 18.0,
+          "y": 21.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "end": {
+        "part": "alu",
+        "id": 1
+      },
+      "isControl": false,
+      "start": {
+        "id": 1,
+        "part": "registers"
+      },
+      "waypoints": [
+        {
+          "x": 34.0,
+          "y": 2.0
+        },
+        {
+          "x": 34.0,
+          "y": 1.6666667
+        }
+      ]
+    },
+    {
+      "bits": 6,
+      "end": {
+        "part": "control",
+        "id": 0
+      },
+      "isControl": false,
+      "start": {
+        "part": "bitmask1",
+        "id": 0
+      },
+      "waypoints": [
+        {
+          "x": 23.5,
+          "y": 9.5
+        },
+        {
+          "x": 23.5,
+          "y": 9.5
+        }
+      ]
+    },
+    {
+      "bits": 5,
+      "start": {
+        "part": "bitmask2",
+        "id": 0
+      },
+      "end": {
+        "part": "registers",
+        "id": 3
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 25.0,
+          "y": 3.5
+        },
+        {
+          "x": 25.0,
+          "y": 2.8000002
+        }
+      ]
+    },
+    {
+      "bits": 5,
+      "start": {
+        "part": "bitmask3",
+        "id": 0
+      },
+      "end": {
+        "part": "registers",
+        "id": 2
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 25.0,
+          "y": 1.5
+        },
+        {
+          "x": 25.0,
+          "y": 1.6000001
+        }
+      ]
+    },
+    {
+      "bits": 5,
+      "start": {
+        "part": "bitmask3",
+        "id": 0
+      },
+      "end": {
+        "part": "mux1",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 24.0,
+          "y": 1.5
+        },
+        {
+          "x": 24.0,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "bits": 5,
+      "start": {
+        "part": "bitmask4",
+        "id": 0
+      },
+      "end": {
+        "part": "mux1",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 24.0,
+          "y": -0.5
+        },
+        {
+          "x": 24.0,
+          "y": -1.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "mux1",
+        "id": 0
+      },
+      "end": {
+        "part": "registers",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 26.5,
+          "y": -0.5
+        },
+        {
+          "x": 26.5,
+          "y": 0.4000001
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "registers",
+        "id": 0
+      },
+      "end": {
+        "part": "mux2",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 33.0,
+          "y": 0.0
+        },
+        {
+          "x": 33.0,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "registers",
+        "id": 0
+      },
+      "end": {
+        "part": "dataMem",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 33.5,
+          "y": 0.0
+        },
+        {
+          "x": 33.5,
+          "y": -3.0
+        },
+        {
+          "x": 40.0,
+          "y": -3.0
+        },
+        {
+          "x": 40.0,
+          "y": -1.3
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "mux2",
+        "id": 0
+      },
+      "end": {
+        "part": "alu",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 35.5,
+          "y": -0.5
+        },
+        {
+          "x": 35.5,
+          "y": 0.33333337
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "mux3",
+        "id": 0
+      },
+      "end": {
+        "part": "muxJump",
+        "id": 0
+      },
+      "isControl": false
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "dataMem",
+        "id": 0
+      },
+      "end": {
+        "part": "muxDataMem",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 45.0,
+          "y": -0.5
+        },
+        {
+          "x": 45.0,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "bits": 6,
+      "start": {
+        "part": "maskalu",
+        "id": 0
+      },
+      "end": {
+        "part": "aluControl",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 32.5,
+          "y": -7.0
+        },
+        {
+          "x": 32.5,
+          "y": -7.0
+        }
+      ]
+    },
+    {
+      "bits": 16,
+      "start": {
+        "part": "bitmask5",
+        "id": 0
+      },
+      "end": {
+        "part": "se",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 25.5,
+          "y": -4.0
+        },
+        {
+          "x": 25.5,
+          "y": -4.0
+        }
+      ]
+    },
+    {
+      "bits": 16,
+      "start": {
+        "part": "bitmask5",
+        "id": 0
+      },
+      "end": {
+        "part": "maskalu",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 27.0,
+          "y": -4.0
+        },
+        {
+          "x": 27.0,
+          "y": -7.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "se",
+        "id": 0
+      },
+      "end": {
+        "part": "mux2",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 33.0,
+          "y": -4.0
+        },
+        {
+          "x": 33.0,
+          "y": -1.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "se",
+        "id": 0
+      },
+      "end": {
+        "part": "shift",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 33.0,
+          "y": -4.0
+        },
+        {
+          "x": 33.0,
+          "y": 14.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "pc",
+        "id": 0
+      },
+      "end": {
+        "part": "add4",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 9.5,
+          "y": 0.5
+        },
+        {
+          "x": 9.5,
+          "y": 16.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "pc",
+        "id": 0
+      },
+      "end": {
+        "part": "instructionMem",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 9.5,
+          "y": 0.5
+        },
+        {
+          "x": 9.5,
+          "y": 0.5
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "add4",
+        "id": 0
+      },
+      "end": {
+        "part": "mux3",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 30.0,
+          "y": 16.0
+        },
+        {
+          "x": 30.0,
+          "y": 17.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "add4",
+        "id": 0
+      },
+      "end": {
+        "part": "adder",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 27.0,
+          "y": 16.0
+        },
+        {
+          "x": 27.0,
+          "y": 15.333333
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "shift",
+        "id": 0
+      },
+      "end": {
+        "part": "adder",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 39.0,
+          "y": 14.0
+        },
+        {
+          "x": 39.0,
+          "y": 14.666667
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "adder",
+        "id": 0
+      },
+      "end": {
+        "part": "mux3",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 44.5,
+          "y": 15.0
+        },
+        {
+          "x": 44.5,
+          "y": 16.0
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "alu",
+        "id": 1
+      },
+      "end": {
+        "part": "and",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 39.0,
+          "y": 1.66666
+        },
+        {
+          "x": 39.0,
+          "y": 11.66666
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "alu",
+        "id": 1
+      },
+      "end": {
+        "part": "not",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 39.0,
+          "y": 1.6666666
+        },
+        {
+          "x": 39.0,
+          "y": 10.5
+        },
+        {
+          "x": 47.0,
+          "y": 10.5
+        },
+        {
+          "x": 47.0,
+          "y": 11.5
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "not",
+        "id": 0
+      },
+      "end": {
+        "part": "bneAnd",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 50.5,
+          "y": 11.5
+        },
+        {
+          "x": 50.5,
+          "y": 11.333333
+        }
+      ]
+    },
+    {
+      "bits": 2,
+      "start": {
+        "part": "bneAnd",
+        "id": 0
+      },
+      "end": {
+        "part": "or",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 54.0,
+          "y": 11.0
+        },
+        {
+          "x": 54.0,
+          "y": 12.666667
+        }
+      ]
+    },
+    {
+      "bits": 2,
+      "start": {
+        "part": "and",
+        "id": 0
+      },
+      "end": {
+        "part": "or",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 49.0,
+          "y": 12.0
+        },
+        {
+          "x": 49.0,
+          "y": 13.333333
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "or",
+        "id": 0
+      },
+      "end": {
+        "part": "mux3",
+        "id": 2
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 58.0,
+          "y": 13.0
+        },
+        {
+          "x": 58.0,
+          "y": 14.5
+        },
+        {
+          "x": 46.5,
+          "y": 14.5
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "instructionMem",
+        "id": 0
+      },
+      "end": {
+        "part": "bitmask1",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 18.0,
+          "y": 0.5
+        },
+        {
+          "x": 18.0,
+          "y": 9.5
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "instructionMem",
+        "id": 0
+      },
+      "end": {
+        "part": "bitmask2",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 18.0,
+          "y": 0.5
+        },
+        {
+          "x": 18.0,
+          "y": 3.5
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "instructionMem",
+        "id": 0
+      },
+      "end": {
+        "part": "bitmask3",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 18.0,
+          "y": 0.5
+        },
+        {
+          "x": 18.0,
+          "y": 1.5
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "instructionMem",
+        "id": 0
+      },
+      "end": {
+        "part": "bitmask4",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 18.0,
+          "y": 0.5
+        },
+        {
+          "x": 18.0,
+          "y": -0.5
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "instructionMem",
+        "id": 0
+      },
+      "end": {
+        "part": "bitmask5",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 18.0,
+          "y": 0.5
+        },
+        {
+          "x": 18.0,
+          "y": -4.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "alu",
+        "id": 0
+      },
+      "end": {
+        "part": "dataMem",
+        "id": 1
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 39.5,
+          "y": 0.33333337
+        },
+        {
+          "x": 39.5,
+          "y": 0.33333325
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "alu",
+        "id": 0
+      },
+      "end": {
+        "part": "muxDataMem",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 39.5,
+          "y": 0.3333333
+        },
+        {
+          "x": 39.5,
+          "y": -4.0
+        },
+        {
+          "x": 45.0,
+          "y": -4.0
+        },
+        {
+          "x": 45.0,
+          "y": -1.0
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "muxDataMem",
+        "id": 0
+      },
+      "end": {
+        "part": "registers",
+        "id": 0
+      },
+      "isControl": false,
+      "waypoints": [
+        {
+          "x": 48.0,
+          "y": -0.5
+        },
+        {
+          "x": 48.0,
+          "y": -10.0
+        },
+        {
+          "x": 26.5,
+          "y": -10.0
+        },
+        {
+          "x": 26.5,
+          "y": -0.8
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 9
+      },
+      "end": {
+        "part": "mux1",
+        "id": 2
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 29.0,
+          "y": 11.5454545
+        },
+        {
+          "x": 29.0,
+          "y": 13.0
+        },
+        {
+          "x": 17.5,
+          "y": 13.0
+        },
+        {
+          "x": 17.5,
+          "y": 1.0
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 0
+      },
+      "end": {
+        "part": "registers",
+        "id": 4
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 29.5,
+          "y": 7.45454547
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 4
+      },
+      "end": {
+        "part": "muxDataMem",
+        "id": 2
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 46.5,
+          "y": 9.2727273
+        }
+      ]
+    },
+    {
+      "bits": 2,
+      "start": {
+        "part": "control",
+        "id": 3
+      },
+      "end": {
+        "part": "aluControl",
+        "id": 1
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 32.5,
+          "y": 8.8181819
+        },
+        {
+          "x": 32.5,
+          "y": -9.0
+        },
+        {
+          "x": 35.0,
+          "y": -9.0
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 2
+      },
+      "end": {
+        "part": "dataMem",
+        "id": 2
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 42.5,
+          "y": 8.3636364
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 1
+      },
+      "end": {
+        "part": "mux2",
+        "id": 2
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 34.5,
+          "y": 7.90909094
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 6
+      },
+      "end": {
+        "part": "and",
+        "id": 1
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 34.5,
+          "y": 10.1818182
+        },
+        {
+          "x": 34.5,
+          "y": 12.333333
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 5
+      },
+      "end": {
+        "part": "dataMem",
+        "id": 3
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 49.0,
+          "y": 9.7272727
+        },
+        {
+          "x": 49.0,
+          "y": -5.0
+        },
+        {
+          "x": 42.5,
+          "y": -5.0
+        }
+      ]
+    },
+    {
+      "bits": 1,
+      "start": {
+        "part": "control",
+        "id": 7
+      },
+      "end": {
+        "part": "bneAnd",
+        "id": 0
+      },
+      "isControl": true,
+      "waypoints": [
+        {
+          "x": 39.5,
+          "y": 10.6363637
+        },
+        {
+          "x": 39.5,
+          "y": 10.666667
+        }
+      ]
+    },
+    {
+      "bits": 4,
+      "end": {
+        "part": "alu",
+        "id": 2
+      },
+      "isControl": true,
+      "start": {
+        "part": "aluControl",
+        "id": 0
+      },
+      "waypoints": [
+        {
+          "x": 37.0,
+          "y": -7.0
+        }
+      ]
+    }]
+}

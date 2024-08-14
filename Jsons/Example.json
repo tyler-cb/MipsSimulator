@@ -1,0 +1,55 @@
+{
+  "parts": {
+    "and": {
+      "pos": {
+        "x": 3,
+        "y": 1
+      },
+      "type": "And",
+      "flags": []
+    },
+    "clickswitch1": {
+      "pos": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "ClickSwitch",
+      "flags": []
+    },
+    "clickswitch2": {
+      "pos": {
+        "x": 0,
+        "y": 3
+      },
+      "type": "ClickSwitch",
+      "flags": []
+    }
+  },
+  "start": "and",
+  "wires": [
+    {
+      "bits": 32,
+      "start": {
+        "part": "clickswitch1",
+        "id": 0
+      },
+      "end": {
+        "part": "and",
+        "id": "0"
+      },
+      "isControl": false
+    },
+    {
+      "bits": 32,
+      "start": {
+        "part": "clickswitch2",
+        "id": 0
+      },
+      "end": {
+        "part": "and",
+        "id": "1"
+      },
+      "isControl": false
+    }
+  ]
+}
